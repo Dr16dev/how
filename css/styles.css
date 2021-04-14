@@ -1,0 +1,312 @@
+body {
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+video {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+}
+* {
+    transition: all 0.5s;
+}
+.logo {
+    position: fixed;
+    top: 2.5vh;
+    left: 3.5vh;;
+    z-index: 3;
+}
+.logo > img {
+    max-width: 12vh;
+    max-height: 12vh;
+}
+.menu {
+    position: fixed;
+    top: 5vh;
+    right: 3.5vh;
+    width: 6vh;
+    height: 4vh;
+    z-index: 3;
+}
+.menu div {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: .75vh;
+    background-color: #000;
+    border: 0;
+}
+.menu div:first-child {
+    top: 0;
+}
+.menu div:last-child {
+    bottom: 0;
+}
+.menu1{
+    background-color: #fff !important;
+    transform: rotate(60deg);
+    top: 50% !important;
+}
+.menu2 {
+    background-color: #fff !important;
+    transform: rotate(-60deg);
+    top: 50% !important;
+}
+.menu-list {
+    position: fixed;
+    top: 0;
+    right: -10%;
+    width: 0%;
+    height: 100vh;
+    background-color: #f00;
+    z-index: 1;
+    color: #fff;
+    font-size: 12vh;
+    padding-top: 8vh;
+    padding-left: 2vw;
+}
+.w-50 {
+    width: 58%;
+}
+.heading-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.heading1 {
+    position: absolute;
+    left: 3.5vh;
+    top: 32vh;
+    width: fit-content;
+    /* font-family: 'Roboto', sans-serif; */
+    font-size: 8vh;
+    line-height: 1.1em;
+}
+.heading2 {
+    position: absolute;
+    right: 3.5vh;
+    bottom: 5vh;
+    text-align: right;
+    width: fit-content;
+    /* font-family: 'Roboto', sans-serif; */
+    font-size: 8vh;
+    line-height: 1.1em;
+}
+.container {
+    position: relative;
+    width: 100%;
+    height: 120vh;
+}
+.deadly-dust{
+    /* position: relative;
+    width: 100%;
+    height: 120vh; */
+    background-image: url("../imgs/deadly-dust.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.txt {
+    position: absolute;
+    bottom: 15vh;
+    left: 3vh;
+}
+.txt > h3 {
+    text-transform: uppercase;
+    color: grey;
+    font-size: 3vh;
+    margin-bottom: 2vh;
+}
+.txt > p {
+    font-size: 3vh;
+    line-height: 1.2em;
+}
+.userzoom {
+    background-color: #fff1e6;
+}
+.news-container {
+    position: relative;
+    top: 0;
+    left: 50%;
+    height: 60vh;
+    width: 50%;
+}
+.news-heading1 {
+    margin-top: 3vh;
+    color: #f00;
+    font-size: 10vh;
+}
+.news-heading1 > span {
+    position: relative;
+    vertical-align: text-top;
+    animation-name: traverse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes traverse {
+    0% {left: 0px; top: 0px;}
+    50% {left: 10px; top: 0px;}
+    100% {left: 0px; top: 0px;}
+}
+.news-heading2 {
+    margin-top: 3vh;
+    font-size: 8vh;
+}
+.news-txt {
+    margin-top: 3vh;
+    font-size: 3vh;
+}
+.intergiro {
+    background-image: url("../imgs/credit.jpg");
+    background-position: left;
+    background-size: cover;
+}
+.bera {
+    background-image: url("../imgs/a4cba8cb-99f8-4047-95a7-8f996aa91283_Bera_5pcs_16x9.gif");
+    background-position: center;
+    background-size: cover;
+}
+.clients {
+    background-color: #000;
+    color: #fff;
+}
+.heading-clients {
+    position: absolute;
+    top: 3vh;
+    left: 3vh;
+    font-size: 8vh;
+}
+#bbc {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+#bbcRadio {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+}
+#wsp {
+    position: absolute;
+    top: 30%;
+    left: 55%;
+}
+#secondHome {
+    position: absolute;
+    top: 30%;
+    left: 75%;
+}
+#theObserver {
+    position: absolute;
+    top: 60%;
+    left: 15%;
+}
+#theGuardian {
+    position: absolute;
+    top: 60%;
+    left: 35%;
+}
+#computerArts {
+    position: absolute;
+    top: 60%;
+    left: 55%;
+}
+#penguin {
+    position: absolute;
+    top: 60%;
+    left: 75%;
+}
+.work-play {
+    display: flex;
+    width: 100%;
+    height: 80vh;
+}
+.work {
+    height: 100%;
+    width: 50%;
+    background-color: #f00;
+    color: white;
+    /* transition: all 0.5s; */
+}
+.play {
+    height: 100%;
+    width: 50%;
+    background-color: #000;
+    color: white;
+    /* transition: all 0.5s; */
+}
+.work > div:nth-child(1), .play > div:nth-child(1) {
+    font-size: 20vh ;
+    font-weight: 700;
+    margin: 5vh 5vh 0 5vh;
+}
+.work > div:nth-child(2), .play > div:nth-child(2) {
+    font-size: 20vh ;
+    font-weight: 700;
+    margin: 0 5vh 5vh 5vh;
+    opacity: 0.5;
+}
+.work > div:last-child, .play > div:last-child {
+    font-size: 4vh;
+    margin: 25vh 0 0 5vh;
+}
+.work:hover {
+    width: 65%;
+}
+.work:hover div:nth-child(2){
+    opacity: 1;
+}
+.work:hover .play {
+    width: 35%;
+}
+.play:hover {
+    width: 65%;
+}
+.play:hover .work {
+    width: 35%;
+}
+.play:hover div:nth-child(2){
+    opacity: 1;
+}
+.footer {
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    height: 30vh;
+}
+.footer > div:nth-child(1) {
+    position: absolute;
+    top: 3vh;
+    left: 3vh;
+    line-height: 1.5em;
+}
+.footer > div:nth-child(2) {
+    position: absolute;
+    top: 3vh;
+    left: 45vh;
+    line-height: 1.5em;
+}
+.footer > div:nth-child(3) {
+    position: absolute;
+    top: 5vh;
+    right: 10vh;
+    line-height: 1.5em;
+}
+.footer > div:nth-child(4) {
+    position: absolute;
+    bottom: 5vh;
+    left: 3vh;
+}
+.footer > div:nth-child(5) {
+    position: absolute;
+    bottom: 5vh;
+    left: 45vh;
+}
+.footer > div:nth-child(6) {
+    position: absolute;
+    bottom: 4vh;
+    right: 8vh;
+    font-size: smaller;
+    color: grey;
+}
